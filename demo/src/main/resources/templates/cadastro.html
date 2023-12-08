@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1">Página de Cadastro</h1>
+    </header>
+    <main>
+        <div class="login_ul">
+            <form action="#" th:action="@{cadastrar_jogador}" th:object="${jogador}" method="post" >
+             <label class="lbl" for="nome">Nome</label>
+             <input th:field="*{nome}" id="nome" placeholder="Nome Completo" class="caixa_texto" type="text">
+             <label class="lbl" for="jogo_favorito">E-mail</label>
+             <input th:field="*{jogo_favorito}" id="jogo_favorito" placeholder="Jogo_favorito" class="caixa_texto" type="jogo_favorito">
+             <label class="lbl" for="telefone">Telefone</label>
+             <input th:field="*{telefone}" id="telefone" placeholder="Telefone" class="caixa_texto" type="number">
+             <input type="submit" class="primary_button">
+             </form>
+         </div>
+    </main>
+</body>
+</html>
